@@ -1,7 +1,7 @@
 import pandas as pd
 
 
-# Função 2 - Listar funcionários, cargos, departamentos e dependentes
+# Consulta 2 - Listar funcionários, cargos, departamentos e dependentes
 def listar_funcionarios_com_detalhes(conn):
     query = '''
     SELECT f.nome AS funcionario, c.nome AS cargo, d.nome AS departamento, dep.nome AS dependente

@@ -1,7 +1,7 @@
 import pandas as pd
 
 
-# Função 4 - Listar a média de idade dos filhos dos funcionários por departamento
+# Consulta 4 - Listar a média de idade dos filhos dos funcionários por departamento
 def listar_media_idade_filhos(conn):
     query = '''
     SELECT d.nome AS departamento, ROUND(AVG(dep.idade), 2) AS media_idade_filhos

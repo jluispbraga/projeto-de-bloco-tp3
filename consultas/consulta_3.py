@@ -1,7 +1,7 @@
 import pandas as pd
 
 
-# Função 3 - Listar funcionários que tiveram aumento salarial nos últimos 3 meses
+# Consulta 3 - Listar funcionários que tiveram aumento salarial nos últimos 3 meses
 def listar_funcionarios_com_aumento(conn):
     query = '''
     SELECT h1.funcionario_id, f.nome

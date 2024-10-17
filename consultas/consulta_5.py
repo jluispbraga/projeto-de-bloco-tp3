@@ -1,7 +1,7 @@
 import pandas as pd
 
 
-# Função 5 - Listar qual estagiário possui filho
+# Consulta 5 - Listar qual estagiário possui filho
 def listar_estagiario_com_filho(conn):
     query = '''
     SELECT f.nome AS estagiario, dep.nome AS dependente

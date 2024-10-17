@@ -1,4 +1,4 @@
-# Função 10 - Listar a média de salário por departamento em ordem decrescente
+# Consulta 10 - Listar a média de salário por departamento em ordem decrescente
 def listar_media_salario_por_departamento(salarios_df, funcionarios_df, departamentos_df):
     media_salario = salarios_df.merge(funcionarios_df, left_on='funcionario_id', right_on='id')
     media_por_departamento = media_salario.groupby('departamento_id')['salario'].mean().reset_index(

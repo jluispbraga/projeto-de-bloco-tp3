@@ -1,7 +1,7 @@
 import pandas as pd
 
 
-# Função 1 - Listar individualmente as tabelas em ordem crescente
+# Consulta 1 - Listar individualmente as tabelas em ordem crescente
 def listar_tabelas(conn):
     tabelas = ['Funcionarios', 'Cargos', 'Departamentos', 'HistoricoSalarios', 'Dependentes']
     for tabela in tabelas:

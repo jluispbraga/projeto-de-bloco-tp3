@@ -1,7 +1,7 @@
 import pandas as pd
 
 
-# Função 8 - Listar o analista com o salário mais alto, entre 5000 e 9000
+# Consulta 8 - Listar o analista com o salário mais alto, entre 5000 e 9000
 def listar_analista_com_salario_alto(salarios_df, funcionarios_df, cargos_df):
     analistas = funcionarios_df[funcionarios_df['cargo_id'].isin(cargos_df[cargos_df['nome'] == 'Analista']['id'])]
     salarios_analistas = salarios_df[salarios_df['funcionario_id'].isin(analistas['id'])]
