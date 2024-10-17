@@ -5,4 +5,4 @@ def listar_media_salario_por_departamento(salarios_df, funcionarios_df, departam
         name='media_salario')
     media_departamentos = media_por_departamento.merge(departamentos_df, left_on='departamento_id', right_on='id')
     media_departamentos = media_departamentos.sort_values(by='media_salario', ascending=False)
-    print(media_departamentos[['nome', 'media_salario']])
+    print(round(media_departamentos[['nome', 'media_salario']], 2))
